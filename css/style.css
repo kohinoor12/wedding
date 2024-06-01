@@ -1052,10 +1052,7 @@ figure {
   content: "\e9f4";
 }
 
-.fh5co-contact-info ul li.email:before {
-  font-size: 23px;
-  content: "\e9da";
-}
+.fh5co-contact-info ul li.email:before {}
 
 .fh5co-contact-info ul li.url:before {
   font-size: 23px;
@@ -1627,9 +1624,7 @@ form label {
   overflow: auto;
 }
 
-#fh5co-testimonial .list-group .name {
-  font-weight: bold;
-}
+#fh5co-testimonial .list-group .name {}
 
 #fh5co-testimonial #button-send {
   /*margin-top: 25px;*/
@@ -1714,7 +1709,7 @@ form label {
 
 #fh5co-started .form-control {
   background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  color: #113468;
   font-size: 16px !important;
   width: 100%;
   -webkit-transition: 0.5s;
@@ -1724,7 +1719,6 @@ form label {
 
 #fh5co-started .form-control::-webkit-input-placeholder {
   color: #828282;
-  ;
 }
 
 #fh5co-started .form-control:-moz-placeholder {
@@ -1738,11 +1732,12 @@ form label {
 }
 
 #fh5co-started .form-control:-ms-input-placeholder {
-  color: #fff;
+  color: #113468;
 }
 
 #fh5co-started .form-control:focus {
   background: rgba(255, 255, 255, 0.3);
+  color: #113468;
 }
 
 #fh5co-started .btn {
@@ -1765,6 +1760,7 @@ form label {
 #fh5co-started .form-inline .form-group .form-control {
   width: 100%;
 }
+
 
 #fh5co-started .fh5co-heading {
   margin-bottom: 30px;
