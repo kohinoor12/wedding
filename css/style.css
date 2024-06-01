@@ -1708,17 +1708,12 @@ form label {
   background: rgba(0, 0, 0, 0.4);
 }
 
-#fh5co-started .fh5co-heading h2 {
-  color: #fff;
-}
+#fh5co-started .fh5co-heading h2 {}
 
-#fh5co-started .fh5co-heading p {
-  color: rgba(255, 255, 255, 0.5);
-}
+#fh5co-started .fh5co-heading p {}
 
 #fh5co-started .form-control {
   background: rgba(255, 255, 255, 0.2);
-  border: none !important;
   color: #fff;
   font-size: 16px !important;
   width: 100%;
@@ -1728,7 +1723,8 @@ form label {
 }
 
 #fh5co-started .form-control::-webkit-input-placeholder {
-  color: #fff;
+  color: #828282;
+  ;
 }
 
 #fh5co-started .form-control:-moz-placeholder {
@@ -2267,7 +2263,6 @@ form label {
 }
 
 .form-control {
-  box-shadow: none;
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.1);
   height: 54px;
@@ -2663,5 +2658,10 @@ form label {
   background-position: 50% 0;
   background-size: cover;
 }
+
+
+
+
+
 
 /*# sourceMappingURL=style.css.map */
