@@ -1251,6 +1251,26 @@ form label {
   /* words */
 }
 
+.mouse-animation {
+  padding: 0.25rem 0.625rem;
+  height: 2rem;
+  border-radius: 1.4rem;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.mouse-animation>.scroll-animation {
+  width: 0.25rem;
+  height: 0.625rem;
+  border-radius: 25%;
+  background-color: black;
+  animation-name: scroll;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
 #fh5co-testimonial,
 #fh5co-services,
 #fh5co-started,
