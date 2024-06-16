@@ -2561,52 +2561,38 @@ form label {
 .save-date-buttons {
   display: flex;
   justify-content: space-between;
-  /* Adjust spacing between buttons */
 }
 
 .save-date-buttons p {
-  width: 48%;
-  /* Adjust width as needed */
-  text-align: center;
-  /* Center align content inside each paragraph */
+  width: 50%;
 }
 
 .save-date-buttons a {
   display: block;
-  /* Ensures the button takes up full width of its parent */
   margin-bottom: 5px;
-  /* Optional: Adds some spacing between buttons */
 }
 
 .save-date-buttons {
   display: flex;
   flex-wrap: wrap;
-  /* Allow wrapping of buttons */
   justify-content: space-between;
-  /* Adjust spacing between buttons */
 }
 
 .save-date-buttons p {
   flex: 0 1 calc(50% - 10px);
-  /* Adjust width and spacing between buttons */
   text-align: center;
-  /* Center align content inside each paragraph */
   margin-bottom: 10px;
-  /* Optional: Adds some spacing between buttons */
 }
 
 .save-date-buttons a {
   display: block;
-  /* Ensures the button takes up full width of its parent */
   margin-bottom: 5px;
-  /* Optional: Adds some spacing between buttons */
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
   .save-date-buttons p {
     flex: 0 1 calc(100% - 10px);
-    /* Full width for smaller screens */
+    margin-left: 10px;
   }
 }
 
