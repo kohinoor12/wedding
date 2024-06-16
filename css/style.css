@@ -2610,6 +2610,13 @@ form label {
   }
 }
 
+
+.fa-heart {
+  color: white;
+  margin-top: -100px;
+}
+
+
 .save-date-buttons {
   display: flex;
   flex-wrap: wrap;
