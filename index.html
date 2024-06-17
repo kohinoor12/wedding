@@ -435,17 +435,22 @@
 			month: d.getMonth() + 1,
 			day: d.getDate(),
 			hour: d.getHours(),
-			minutes: 0, // Default is 0 [0-59] integer
-			seconds: 0, // Default is 0 [0-59] integer
+			minutes: 0,
+			seconds: 0,
 			countUp: true
-			// enableUtc: true
+
 		});
 
 
-		$('#open-invitation').click(function () {
+		$(document).on('click', '#open-invitation', function () {
+			$('html, body').scrollTop(0);
 			$('#overlay').addClass('hide-overlay');
 			toggleAudio();
+			$('#fh5co-header').removeClass('hide-overlay');
 		});
+
+
+
 
 		$.get("", function (data) {
 			for (let i = 0; i < data.length; i++) {
