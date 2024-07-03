@@ -262,9 +262,9 @@
 									Maharashtra 400004</p>
 
 								<a href="https://maps.app.goo.gl/ZPzuBLJzriFYHQZ9A" target="_blank"
-									class="btn btn-primary"><i class="fa-solid fa-map-pin"
-										style="margin-right: 10px;"></i>Show on
-									map </a>
+									class="btn btn-primary">
+									<i class="fa-solid fa-map-pin" style="margin-right: 10px;"></i>Show on map
+								</a>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6 text-center">
@@ -287,200 +287,197 @@
 								</p>
 
 								<a href="https://maps.app.goo.gl/ZPzuBLJzriFYHQZ9A" target="_blank"
-									class="btn btn-primary"><i class="fa-solid fa-map-pin"
-										style="margin-right: 10px;"></i>Show on map</a>
+									class="btn btn-primary">
+									<i class="fa-solid fa-map-pin" style="margin-right: 10px;"></i>Show on map
+								</a>
 							</div>
-						</div>
-						<div class="col-md-12 animate-box" style="margin-top: 15px;">
-							<!-- <iframe width="100%" height="400" style="border: 0; border-radius: 5px;" frameborder="0"
-								scrolling="no"
-								src="https://calendar.google.com/calendar/embed?src=p68227rf4u2tqb5orkf10m3u44%40group.calendar.google.com&ctz=Asia%2FJakarta"></iframe> -->
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.3536353430254!2d72.82465357497432!3d18.959983382220944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce15fb59362d%3A0x815172d67deaef13!2s3rd%20Kumbharwada%2C%20Kumbharwada%2C%20Mumbai%2C%20Maharashtra%20400004!5e0!3m2!1sen!2sin!4v1718533339375!5m2!1sen!2sin"
-								width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-								referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			<div class="col-md-12 col-sm-6 text-center" style="margin-top: 15px;">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.3536353430254!2d72.82465357497432!3d18.959983382220944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce15fb59362d%3A0x815172d67deaef13!2s3rd%20Kumbharwada%2C%20Kumbharwada%2C%20Mumbai%2C%20Maharashtra%20400004!5e0!3m2!1sen!2sin!4v1718533339375!5m2!1sen!2sin"
+					width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
 
-		<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/background/blue-brush-2.jpg);">
-			<div class=""></div>
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">Are You Attending?</h2>
-						<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
+			<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/background/blue-brush-2.jpg);">
+				<div class=""></div>
+				<div class="container">
+					<div class="row animate-box">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+							<h2 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">Are You Attending?</h2>
+							<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
+						</div>
+					</div>
+					<div class="row animate-box">
+						<div class="col-md-10 col-md-offset-1">
+							<form class="form-inline">
+								<div class="col-md-4 col-sm-4">
+									<div class="form-group">
+										<label for="name" class="sr-only">Name</label>
+										<input type="name" class="form-control" id="firstname" placeholder="Name">
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="form-group">
+										<label for="email" class="sr-only">Wishes</label>
+										<input type="email" class="form-control" id="wishes" placeholder="Wishes">
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<button type="button" id="submitButton" class="btn btn-default btn-block"><i
+											class="fa-solid fa-check-to-slot" style="margin-right: 10px;"></i>I am
+										Attending</button>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
-				<div class="row animate-box">
-					<div class="col-md-10 col-md-offset-1">
-						<form class="form-inline">
-							<div class="col-md-4 col-sm-4">
-								<div class="form-group">
-									<label for="name" class="sr-only">Name</label>
-									<input type="name" class="form-control" id="firstname" placeholder="Name">
+			</div>
+
+
+
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Dear <span id="userNmae"></span>,</h4>
+						</div>
+						<div class="modal-body">
+							<p style="color:#113468;">
+								I truly express my gratitude to you for accepting our invitation and taking out your
+								precious time to attend the wedding.
+								Your presence will definitely make the event more joyful and memorable.
+								We whole heartedly thank you for the same.
+							</p>
+
+							<div class="col-xs-12">
+								<div class="col-xs-4">
+									<img src="images/popup.gif" width="100%" alt="user">
+								</div>
+								<div class="col-xs-8">
+									<img src="images/giphy.gif" width="100%" alt="user">
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-4">
-								<div class="form-group">
-									<label for="email" class="sr-only">Wishes</label>
-									<input type="email" class="form-control" id="wishes" placeholder="Wishes">
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-4">
-								<button type="button" id="submitButton" class="btn btn-default btn-block"><i
-										class="fa-solid fa-check-to-slot" style="margin-right: 10px;"></i>I am
-									Attending</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
 
 
+							<p style="color:#113468;">
 
-		<div id="myModal" class="modal fade" role="dialog">
-			<div class="modal-dialog">
+								<br />
+								Looking forward to see you,
+							</p>
 
-				<!-- Modal content-->
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">Dear <span id="userNmae"></span>,</h4>
-					</div>
-					<div class="modal-body">
-						<p style="color:#113468;">
-							I truly express my gratitude to you for accepting our invitation and taking out your
-							precious time to attend the wedding.
-							Your presence will definitely make the event more joyful and memorable.
-							We whole heartedly thank you for the same.
-						</p>
-
-						<div class="col-xs-12">
-							<div class="col-xs-4">
-								<img src="images/popup.gif" width="100%" alt="user">
-							</div>
-							<div class="col-xs-8">
-								<img src="images/giphy.gif" width="100%" alt="user">
-							</div>
 						</div>
-
-
-						<p style="color:#113468;">
-
-							<br />
-							Looking forward to see you,
-						</p>
-
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default"
+								style="background-image: linear-gradient(to right,#113468,#113468); color: white;"
+								data-dismiss="modal">Thank You</button>
+						</div>
 					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default"
-							style="background-image: linear-gradient(to right,#113468,#113468); color: white;"
-							data-dismiss="modal">Thank You</button>
-					</div>
+
 				</div>
-
 			</div>
+
+
+			<footer id="fh5co-footer" role="contentinfo"
+				style="background: url('images/background/repeat-background/witewall_3.png'); background-repeat:repeat ">
+				<div class="container">
+					<img class="flower-1" style="position: absolute; right: 0; bottom: 0"
+						src="images/background/flowers/bottom-right-1.svg">
+					<img class="flower-1" style="position: absolute; left: 0; bottom:0"
+						src="images/background/flowers/bottom-left-1.svg">
+					<div class="row copyright animate-box">
+						<div class="col-md-12 text-center">
+							<p>
+								We would be honored and delighted if you could grace us with your
+								presence and blessings.
+								<br>For your presence and blessings, we express our gratitude.
+							<h3 style="color: #bf9b73">Shukriya</h3>
+							</p>
+							<img src="images/Designer2.png" width="100" height="100" style="border-radius: 200px;">
+							<br>
+							<h1 style="font-family: 'Satisfy', Arial, serif">Akash & Laxmi</h1>
+
+							<p>
+								Made with ❤️
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</footer>
+
 		</div>
 
 
-		<footer id="fh5co-footer" role="contentinfo"
-			style="background: url('images/background/repeat-background/witewall_3.png'); background-repeat:repeat ">
-			<div class="container">
-				<img class="flower-1" style="position: absolute; right: 0; bottom: 0"
-					src="images/background/flowers/bottom-right-1.svg">
-				<img class="flower-1" style="position: absolute; left: 0; bottom:0"
-					src="images/background/flowers/bottom-left-1.svg">
-				<div class="row copyright animate-box">
-					<div class="col-md-12 text-center">
-						<p>
-							We would be honored and delighted if you could grace us with your
-							presence and blessings.
-							<br>For your presence and blessings, we express our gratitude.
-						<h3 style="color: #bf9b73">Shukriya</h3>
-						</p>
-						<img src="images/Designer2.png" width="100" height="100" style="border-radius: 200px;">
-						<br>
-						<h1 style="font-family: 'Satisfy', Arial, serif">Akash & Laxmi</h1>
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- countTo -->
+		<script src="js/jquery.countTo.js"></script>
 
-						<p>
-							Made with ❤️
-						</p>
-					</div>
-				</div>
+		<!-- Stellar -->
+		<script src="js/jquery.stellar.min.js"></script>
+		<!-- Magnific Popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/magnific-popup-options.js"></script>
 
-			</div>
-		</footer>
+		<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+		<script src="js/simplyCountdown.js"></script>
+		<!-- Main -->
+		<script src="js/main.js"></script>
 
-	</div>
-
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
-
-	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-
-	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
-	<script src="js/simplyCountdown.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
-
-	<script src="lib/lightgallery.js/dist/lightgallery.min.js"></script>
-	<script src="lib/lightgallery.js/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
-	<script src="lib/lightgallery.js/dist/plugins/autoplay/lg-autoplay.min.js"></script>
-	<script src="lib/lightgallery.js/dist/plugins/fullscreen/lg-fullscreen.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+		<script src="lib/lightgallery.js/dist/lightgallery.min.js"></script>
+		<script src="lib/lightgallery.js/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
+		<script src="lib/lightgallery.js/dist/plugins/autoplay/lg-autoplay.min.js"></script>
+		<script src="lib/lightgallery.js/dist/plugins/fullscreen/lg-fullscreen.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
 
 
-	<script>
-		day = 11; month = 7 - 1; year = 2024;
-		hour = 0; minute = 0;
-		var d = new Date(year, month, day, hour, minute, 0, 0);
+		<script>
+			day = 11; month = 7 - 1; year = 2024;
+			hour = 0; minute = 0;
+			var d = new Date(year, month, day, hour, minute, 0, 0);
 
-		simplyCountdown('.simply-countdown-wedding', {
-			year: d.getFullYear(),
-			month: d.getMonth() + 1,
-			day: d.getDate(),
-			hour: d.getHours(),
-			minutes: 0,
-			seconds: 0,
-			countUp: true
+			simplyCountdown('.simply-countdown-wedding', {
+				year: d.getFullYear(),
+				month: d.getMonth() + 1,
+				day: d.getDate(),
+				hour: d.getHours(),
+				minutes: 0,
+				seconds: 0,
+				countUp: true
 
-		});
+			});
 
 
-		$(document).on('click', '#open-invitation', function () {
-			$('html, body').scrollTop(0);
-			$('#overlay').addClass('hide-overlay');
-			toggleAudio();
-			$('#fh5co-header').removeClass('hide-overlay');
-		});
+			$(document).on('click', '#open-invitation', function () {
+				$('html, body').scrollTop(0);
+				$('#overlay').addClass('hide-overlay');
+				toggleAudio();
+				$('#fh5co-header').removeClass('hide-overlay');
+			});
 
 
 
 
-		$.get("", function (data) {
-			for (let i = 0; i < data.length; i++) {
-				const item = `
+			$.get("", function (data) {
+				for (let i = 0; i < data.length; i++) {
+					const item = `
 				<a class="list-group-item">
 					<div class="name"><span class="strong" style="font-size: 24px">${data[i].user.login}</span> <span class="label label-success">${data[i].labels.length > 0 ? data[i].labels[0].name : 'Tanpa Keterangan'}</span></div>
 					<hr style="margin-top: 0;">
@@ -488,89 +485,89 @@
 				</a>
 			`;
 
-				$("#fh5co-testimonial .list-group").append(item);
-			}
-		});
-
-		function scrollToElement(el) {
-			$("html, body").animate({ scrollTop: $(`#${el}`).offset().top }, 1000);
-		}
-	</script>
-
-
-	<script>
-		var audioControl = document.getElementById("audio-control");
-
-		function togglePlayButton(play) {
-			var iconSrc = play ? "images/audio/pause.png" : "images/audio/play.png";
-			document.getElementById("audio-icon").src = iconSrc;
-		}
-
-		function toggleAudio() {
-			var audio = document.getElementById("local-audio");
-			if (!audio.paused) {
-				audio.pause();
-				togglePlayButton(false);
-			} else {
-				audio.play();
-				togglePlayButton(true);
-			}
-		}
-
-		function initializeAudio(filePath) {
-			if (filePath) {
-				audioControl.innerHTML = '<img id="audio-icon" src="images/audio/play.png"/><audio id="local-audio" src="' + filePath + '" loop></audio>';
-				audioElement = document.getElementById("local-audio");
-				audioControl.style.display = "block";
-				audioControl.onclick = toggleAudio;
-			} else {
-				alert("No file path provided.");
-			}
-		}
-
-		var audioFilePath = "images/audio/Ranjha (Sid X Kiara Version)_192(Ghantalele.com).mp3";
-		initializeAudio(audioFilePath);
-
-	</script>
-
-
-	<script>
-		function akadLocation() {
-			// If it's an iPhone..
-			if ((navigator.platform.indexOf("iPhone") != -1)
-				|| (navigator.platform.indexOf("iPod") != -1)
-				|| (navigator.platform.indexOf("iPad") != -1))
-				window.open("maps://www.google.com/maps?daddr=masjid+keuchik+leumik");
-			else
-				window.open("https://www.google.com/maps?daddr=masjid+keuchik+leumik");
-		}
-
-		function walimahLocation() {
-			// If it's an iPhone..
-			if ((navigator.platform.indexOf("iPhone") != -1)
-				|| (navigator.platform.indexOf("iPod") != -1)
-				|| (navigator.platform.indexOf("iPad") != -1))
-				window.open("maps://www.google.com/maps?daddr=Amel+Convention+Hall");
-			else
-				window.open("https://www.google.com/maps?daddr=Amel+Convention+Hall");
-		}
-	</script>
-
-	<script>
-
-		$(document).ready(function () {
-
-			$("#submitButton").click(function () {
-				if ($('#firstname').val() != '') {
-					$('#userNmae').html($('#firstname').val());
-					$('#myModal').modal('show');
-				} else {
-					alert('Please enter your name to notify us');
+					$("#fh5co-testimonial .list-group").append(item);
 				}
-			})
-		});
+			});
 
-	</script>
+			function scrollToElement(el) {
+				$("html, body").animate({ scrollTop: $(`#${el}`).offset().top }, 1000);
+			}
+		</script>
+
+
+		<script>
+			var audioControl = document.getElementById("audio-control");
+
+			function togglePlayButton(play) {
+				var iconSrc = play ? "images/audio/pause.png" : "images/audio/play.png";
+				document.getElementById("audio-icon").src = iconSrc;
+			}
+
+			function toggleAudio() {
+				var audio = document.getElementById("local-audio");
+				if (!audio.paused) {
+					audio.pause();
+					togglePlayButton(false);
+				} else {
+					audio.play();
+					togglePlayButton(true);
+				}
+			}
+
+			function initializeAudio(filePath) {
+				if (filePath) {
+					audioControl.innerHTML = '<img id="audio-icon" src="images/audio/play.png"/><audio id="local-audio" src="' + filePath + '" loop></audio>';
+					audioElement = document.getElementById("local-audio");
+					audioControl.style.display = "block";
+					audioControl.onclick = toggleAudio;
+				} else {
+					alert("No file path provided.");
+				}
+			}
+
+			var audioFilePath = "images/audio/Ranjha (Sid X Kiara Version)_192(Ghantalele.com).mp3";
+			initializeAudio(audioFilePath);
+
+		</script>
+
+
+		<script>
+			function akadLocation() {
+				// If it's an iPhone..
+				if ((navigator.platform.indexOf("iPhone") != -1)
+					|| (navigator.platform.indexOf("iPod") != -1)
+					|| (navigator.platform.indexOf("iPad") != -1))
+					window.open("maps://www.google.com/maps?daddr=masjid+keuchik+leumik");
+				else
+					window.open("https://www.google.com/maps?daddr=masjid+keuchik+leumik");
+			}
+
+			function walimahLocation() {
+				// If it's an iPhone..
+				if ((navigator.platform.indexOf("iPhone") != -1)
+					|| (navigator.platform.indexOf("iPod") != -1)
+					|| (navigator.platform.indexOf("iPad") != -1))
+					window.open("maps://www.google.com/maps?daddr=Amel+Convention+Hall");
+				else
+					window.open("https://www.google.com/maps?daddr=Amel+Convention+Hall");
+			}
+		</script>
+
+		<script>
+
+			$(document).ready(function () {
+
+				$("#submitButton").click(function () {
+					if ($('#firstname').val() != '') {
+						$('#userNmae').html($('#firstname').val());
+						$('#myModal').modal('show');
+					} else {
+						alert('Please enter your name to notify us');
+					}
+				})
+			});
+
+		</script>
 
 
 </body>
